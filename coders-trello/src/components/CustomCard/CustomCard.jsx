@@ -29,7 +29,7 @@ const CustomCard = ({ task, stateOfTask, deleteTask, taskDraggingStarted }) => {
         <Card className="custom_card__wrapper"
             draggable={true}
             onDrag={(event) => onTaskDrag(event, taskDraggingStarted, task, stateOfTask)}
-            style={{ backgroundColor: "#8DAA9D", border: `2px solid ${getBorderColorAsPerStateOfTask(stateOfTask)}`,  borderRadius: 15 }}
+            style={{ backgroundColor: "#fff", border: `2px solid ${getBorderColorAsPerStateOfTask(stateOfTask)}`,  borderRadius: 15 }}
         >
             <CardBody className="custom_card__body">
                 <CardTitle className="custom_card__title">
