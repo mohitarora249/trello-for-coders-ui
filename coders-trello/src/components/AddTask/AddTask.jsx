@@ -100,7 +100,7 @@ class AddTask extends Component {
     geTTaskFormFooter = () => {
         return (
             <>
-                <Button color="primary" onClick={this.addTaskBtnClicked}>Add</Button>{' '}
+                <Button style={{backgroundColor: "#4f8a8b"}} onClick={this.addTaskBtnClicked}>Add</Button>{' '}
                 <Button color="secondary" onClick={() => this.props.closeAddTaskModal(false)}>Cancel</Button>
             </>
         );
@@ -110,7 +110,7 @@ class AddTask extends Component {
         return (
             <CustomModal
                 isOpen={this.props.isOpen}
-                header={"Add Task"}
+                header={<b><h2>Add Task</h2></b>}
                 body={this.getTaskFormBody()}
                 footer={this.geTTaskFormFooter()}
             />

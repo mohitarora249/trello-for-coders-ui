@@ -27,9 +27,9 @@ function App({ numberOfBacklogs }) {
                 draggable
             />
             <Row className="app__header">
-                <h2>
-                    {DISPLAY_TEXT.APP_TITLE}
-                </h2>
+                <h1>
+                    <b>{DISPLAY_TEXT.APP_TITLE}</b>
+                </h1>
             </Row>
             <Row className="app__columns_wrapper">
                 {APP_COLUMNS.map(appColumn => <Col key={appColumn.id} lg={3} md={3} sm={6} xs={12} className="app__column">
@@ -43,7 +43,7 @@ function App({ numberOfBacklogs }) {
             <Button
                 disabled={MAX_NO_OF_TASKS.BACKLOGS <= numberOfBacklogs}
                 className="app__add_task_btn"
-                style={{ borderRadius: 50 }}
+                style={{ borderRadius: 50, backgroundColor: "#8DAA9D" }}
                 id="addTaskTooltip"
                 onClick={addTaskBtnClicked}
             >

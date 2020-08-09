@@ -12,7 +12,7 @@ import "./CardContainer.css";
 function CardContainer(props) {
     const { info, tasks, cardDropped } = props;
     return (
-        <Card style={{ backgroundColor: "#E6E6E6", height: "85vh", borderRadius: 15 }} className="card_container__wrapper">
+        <Card style={{ backgroundColor: "#FBF5F3", height: "85vh", borderRadius: 15 }} className="card_container__wrapper">
             <CardTitle className="card_container__title">
                 <h4><b>{info.label}</b></h4>
             </CardTitle>
