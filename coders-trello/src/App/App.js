@@ -43,7 +43,7 @@ function App({ numberOfBacklogs }) {
             <Button
                 disabled={MAX_NO_OF_TASKS.BACKLOGS <= numberOfBacklogs}
                 className="app__add_task_btn"
-                style={{ borderRadius: 50, backgroundColor: "#8DAA9D" }}
+                style={{ borderRadius: 40, backgroundColor: "#8DAA9D" }}
                 id="addTaskTooltip"
                 onClick={addTaskBtnClicked}
             >
