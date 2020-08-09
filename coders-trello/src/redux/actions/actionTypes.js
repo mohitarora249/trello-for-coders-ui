@@ -1,4 +1,4 @@
-export const CARDS = {
+export const TASKS = {
     DROPPED: "DROPPED",
     ADD_TASK: "ADD_TASK",
     DELETE_TASK: "DELETE_TASK",

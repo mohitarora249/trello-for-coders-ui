@@ -1,22 +1,22 @@
-import { CARDS } from "./actionTypes";
+import { TASKS } from "./actionTypes";
 
 export function cardDropped(moveTaskTo) {
     return {
-        type: CARDS.DROPPED,
+        type: TASKS.DROPPED,
         moveTaskTo
     }
 }
 
 export function addTask(task) {
     return {
-        type: CARDS.ADD_TASK,
+        type: TASKS.ADD_TASK,
         task
     }
 }
 
 export function deleteTask(key, idOfTaskToBeRemoved) {
     return {
-        type: CARDS.DELETE_TASK,
+        type: TASKS.DELETE_TASK,
         key,
         idOfTaskToBeRemoved
     }
@@ -24,7 +24,7 @@ export function deleteTask(key, idOfTaskToBeRemoved) {
 
 export function taskDraggingStarted(task, moveTaskFrom) {
     return {
-        type: CARDS.TASK_DRAGGING_STARTED,
+        type: TASKS.TASK_DRAGGING_STARTED,
         task,
         moveTaskFrom
     }

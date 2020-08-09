@@ -1,4 +1,4 @@
-import { CARDS } from "../actions/actionTypes";
+import { TASKS } from "../actions/actionTypes";
 import { v4 as uuidv4 } from 'uuid';
 import * as _ from "lodash";
 import { toast } from 'react-toastify';
@@ -17,7 +17,7 @@ const initialState = {
 
 export default function tasks(state = initialState, action) {
     switch (action.type) {
-        case CARDS.DROPPED: {
+        case TASKS.DROPPED: {
             let tasks = _.cloneDeep(state.tasks);
             /* Conditions to check:-
                 1) wheher we are dropping in the same zone.
@@ -39,7 +39,7 @@ export default function tasks(state = initialState, action) {
                 moveTaskFrom: null
             };
         }
-        case CARDS.ADD_TASK: {
+        case TASKS.ADD_TASK: {
             const backlogs = _.cloneDeep(state.tasks.backlogs);
             backlogs.push({ id: uuidv4(), ...action.task });
             return {
@@ -50,7 +50,7 @@ export default function tasks(state = initialState, action) {
                 }
             };
         }
-        case CARDS.DELETE_TASK: {
+        case TASKS.DELETE_TASK: {
             let tasks = _.cloneDeep(state.tasks);
             _.remove(tasks[action.key], { id: action.idOfTaskToBeRemoved });
             toast(TOAST_MESSAGES.TASK_DELETED);
@@ -61,7 +61,7 @@ export default function tasks(state = initialState, action) {
                 }
             };
         }
-        case CARDS.TASK_DRAGGING_STARTED: {
+        case TASKS.TASK_DRAGGING_STARTED: {
             return {
                 ...state,
                 draggedTask: action.task,
