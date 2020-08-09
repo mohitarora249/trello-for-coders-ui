@@ -1,4 +1,4 @@
-.card_container__wrapper {
+.card_container__title {
     display: flex;
     justify-content: center;
     margin-bottom: 0px !important;
@@ -14,4 +14,8 @@
 .card_container__no_tasks_message {
     display: flex;
     justify-content: center;
+}
+
+.card_container__wrapper {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
