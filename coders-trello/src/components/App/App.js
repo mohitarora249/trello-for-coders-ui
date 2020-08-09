@@ -5,8 +5,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { GrFormAdd } from "react-icons/gr"
 
-import { APP_COLUMNS, DISPLAY_TEXT, MAX_NO_OF_TASKS, TOOLTIP_MESSAGES } from "../constants";
-import { CardContainer, AddTask } from "../components";
+import { APP_COLUMNS, DISPLAY_TEXT, MAX_NO_OF_TASKS, TOOLTIP_MESSAGES } from "../../constants";
+import { CardContainer, AddTask } from "..";
 import "./App.css";
 
 
