@@ -9,6 +9,7 @@
 .card_container__tasks_container {
     overflow-y: "auto";
     height: 85vh;
+    border-radius: 15px !important;
 }
 
 .card_container__no_tasks_message {
