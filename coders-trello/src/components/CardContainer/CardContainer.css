@@ -1,0 +1,17 @@
+.card_container__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px !important;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.card_container__tasks_container {
+    overflow-y: "auto";
+    height: 85vh;
+}
+
+.card_container__no_tasks_message {
+    display: flex;
+    justify-content: center;
+}

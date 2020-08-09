@@ -1,0 +1,5 @@
+.add_task__error_message {
+    color: red;
+    display: flex;
+    justify-content: center;
+}

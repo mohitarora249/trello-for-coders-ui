@@ -1,0 +1,34 @@
+.custom_card__body {
+    padding: .25rem !important;
+}
+
+.custom_card__title {
+    margin-bottom: 0px !important;
+    display: flex;
+    flex: 1;
+}
+
+.custom_card__title_delete_icon {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.custom_card__title_delete_icon :hover{
+    color: red;
+}
+
+.custom_card__wrapper {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.custom_card__date {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.custom_card__desc {
+    font-size: 12px;
+}

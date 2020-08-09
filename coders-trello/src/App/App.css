@@ -1,0 +1,32 @@
+.app__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.app__columns_wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.app__container {
+    background-color: #fff;
+    display: "flex";
+    flex-direction: column;
+    justify-content: "center";
+    height: 100%;
+    overflow: auto;
+}
+
+.app__add_task_btn {
+    position: fixed;
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+    bottom: 5px;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    font-family: 'Open Sans';
+}
